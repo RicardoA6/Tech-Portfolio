@@ -24,7 +24,6 @@ Sample automation scripts using tools like Selenium and Postman:
 ---
 
 ## 💻 Software Engineering Projects
-
 ### 🎮 Unity Projects (C#)
 Projects that demonstrate my Unity and gameplay programming experience:
 - [2D Platformer Game](software-projects/unity-2d-platformer/)
@@ -34,16 +33,11 @@ Projects that demonstrate my Unity and gameplay programming experience:
 Console apps and helper tools built in C#:
 - [File Parser Tool](software-projects/csharp-tools/file-parser.cs)
 - [Simple Calculator CLI](software-projects/csharp-tools/cli-calculator.cs)
-
-### 🌐 Front-End Practice (Optional)
-If you're learning or dabbling in web dev:
-- [React Portfolio Website](software-projects/react-portfolio-site/)
-
 ---
 
 ## 📫 Contact
 
 I'm open to QA, SDET, and Software Engineer opportunities—especially in games or tech companies where quality and creativity matter.
 
-- [LinkedIn](https://www.linkedin.com/in/your-link-here/)
-- Email: your.email@example.com
+- [LinkedIn](https://www.linkedin.com/in/ricardomontescs/)
+- Email: ricardomontescs@gmail.com
