@@ -44,7 +44,17 @@ section {
 
 footer {
     text - align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background: #222;
     color: white;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
