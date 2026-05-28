@@ -6,14 +6,87 @@
     <title>Ricardo Montes | About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div id="header"></div>
+<body class="theme-ff7">
+  <div id="header"></div>
 
-    <!-- Page-specific content here -->
+  <main class="ff7-main">
+    <div class="ff7-screen">
 
-    <div id="footer"></div>
+      <!-- Left: Character rows -->
+      <div class="ff7-chars-panel ff7-panel">
 
-    <script src="includes.js"></script>
+        <div class="ff7-char-row">
+          <div class="ff7-portrait qa-portrait">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="ff7-char-data">
+            <span class="ff7-char-name">Ricardo Montes</span>
+            <div class="ff7-stat-line">
+              <span class="ff7-abbr">LV</span><span class="ff7-val"> 36</span>
+            </div>
+            <div class="ff7-stat-line">
+              <span class="ff7-abbr">HP</span>
+              <span class="ff7-hp-val">3333</span><span class="ff7-slash">/</span><span class="ff7-val"> 3333</span>
+            </div>
+            <div class="ff7-stat-line">
+              <span class="ff7-abbr">MP</span>
+              <span class="ff7-hp-val">633</span><span class="ff7-slash">/</span><span class="ff7-val"> 633</span>
+            </div>
+          </div>
+          <div class="ff7-bars">
+            <div class="ff7-bar-wrap">
+              <span class="ff7-bar-lbl">next level</span>
+              <div class="ff7-track"><div class="ff7-fill" style="width:72%"></div></div>
+            </div>
+            <div class="ff7-bar-wrap">
+              <span class="ff7-bar-lbl">Limit level <span class="ff7-bar-num">1</span></span>
+              <div class="ff7-track"><div class="ff7-fill ff7-fill-limit" style="width:30%"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /ff7-chars-panel -->
+
+      <!-- Right: Menu + Time/Gil — always anchored to the right -->
+      <div class="ff7-right-col">
+
+        <div class="ff7-nav-panel ff7-panel">
+          <ul class="ff7-nav-menu">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a class="ff7-menu-dim">Magic</a></li>
+            <li><a class="ff7-menu-dim">Materia</a></li>
+            <li><a class="ff7-menu-dim">Equip</a></li>
+            <li><a class="ff7-menu-dim">Status</a></li>
+            <li><a class="ff7-menu-dim">Order</a></li>
+            <li><a class="ff7-menu-dim">Limit</a></li>
+            <li><a class="ff7-menu-dim">Config</a></li>
+            <li class="ff7-sep"></li>
+            <li><a class="ff7-menu-dim">Save</a></li>
+            <li><a class="ff7-menu-dim">Quit</a></li>
+          </ul>
+        </div>
+
+        <div class="ff7-timegil-panel ff7-panel">
+          <div class="ff7-tg-row">
+            <span class="ff7-abbr">Time</span>
+            <span class="ff7-tg-val">0:08:00</span>
+          </div>
+          <div class="ff7-tg-row">
+            <span class="ff7-abbr">Gil</span>
+            <span class="ff7-tg-val">435</span>
+          </div>
+        </div>
+
+      </div><!-- /ff7-right-col -->
+
+    </div><!-- /ff7-screen -->
+
+    <div class="ff7-location-bar ff7-panel">Sector 7 Slums</div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="includes.js"></script>
 </body>
 </html>
