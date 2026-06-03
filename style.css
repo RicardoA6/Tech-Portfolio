@@ -299,27 +299,47 @@ footer small {
 
 
 /* =============================================
-   FF7 ABOUT PAGE LAYOUT
+   FF7 ABOUT PAGE LAYOUT — CSS Grid
+   Adjust the tokens below to rescale the whole layout.
    ============================================= */
 
+:root {
+    --ff7-rc-width:     200px;    /* right column width */
+    --ff7-rc-overlap:   36px;     /* right col slides left into chars panel */
+    --ff7-rc-top:      -21px;     /* right col floats above grid top (Resume alignment) */
+    --ff7-nav-tg-gap:   2.2rem;   /* gap between nav panel and time/gil panel */
+    --ff7-loc-width:    400px;    /* location bar width (2× rc-width) */
+    --ff7-loc-half:     27px;     /* half the location bar height */
+    --ff7-tg-loc-gap:   8px;      /* gap between time/gil bottom and location bar top */
+}
+
+/*
+  Grid rows:
+    row 1 (auto)              — main content: chars panel + right col
+    row 2 (--ff7-tg-loc-gap)  — gap between time panel and location bar
+    row 3 (--ff7-loc-half)    — top half of location bar; chars panel bottom border lands here
+    row 4 (--ff7-loc-half)    — bottom half of location bar
+*/
 .ff7-main {
+    display: grid;
+    grid-template-columns: 1fr var(--ff7-rc-width);
+    grid-template-rows:
+        auto
+        var(--ff7-tg-loc-gap)
+        var(--ff7-loc-half)
+        var(--ff7-loc-half);
     padding: 1.5rem 1rem 2rem;
-    max-width: 1020px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: "VT323", monospace;
 }
 
-.ff7-screen {
-    display: flex;
-    gap: 0;
-    align-items: stretch;
-    position: relative;
-}
-
-/* Characters panel — back layer */
+/* Characters panel — spans rows 1-3 so its bottom border sits at location bar midpoint */
+/* padding-right accounts for the right col overlap so no content is hidden */
 .ff7-chars-panel {
-    flex: 1 1 auto;
-    padding: 0.5rem 1rem;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    padding: 0.5rem calc(var(--ff7-rc-overlap) + 1.5rem) 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -422,15 +442,18 @@ footer small {
     background: linear-gradient(90deg, #5a1020 0%, #991133 100%);
 }
 
-/* Right column — front layer, overlaps chars panel */
+/* Right column — grid col 2, row 1 only; flex internally for nav + time */
 .ff7-right-col {
-    flex: 0 0 200px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--ff7-nav-tg-gap);
     position: relative;
     z-index: 2;
-    margin-left: -14px;
+    margin-left: calc(-1 * var(--ff7-rc-overlap));
+    margin-top: var(--ff7-rc-top);
 }
 
 
@@ -444,13 +467,14 @@ footer small {
     padding: 0;
 }
 
-.ff7-nav-menu li { padding: 1px 0; }
+.ff7-nav-menu li { padding: 0; }
 
 .ff7-nav-menu a {
     font-size: 1.4rem;
     color: var(--ff7-text);
     text-decoration: none;
     display: block;
+    line-height: 1.15;
     padding: 1px 4px;
     white-space: nowrap;
 }
@@ -479,7 +503,7 @@ footer small {
 
 /* Time / Gil panel */
 .ff7-timegil-panel {
-    padding: 0.4rem 0.85rem;
+    padding: 0.2rem 0.85rem;
 }
 
 .ff7-tg-row {
@@ -487,14 +511,20 @@ footer small {
     justify-content: space-between;
     align-items: center;
     font-size: 1.3rem;
-    padding: 2px 0;
+    padding: 0;
+    line-height: 1.2;
 }
 
 .ff7-tg-val { color: #ffffff; }
 
-/* Location bar */
+/* Location bar — spans both cols, rows 3-4, right-aligned at 2× right col width */
 .ff7-location-bar {
-    margin-top: 10px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    justify-self: end;
+    width: var(--ff7-loc-width);
+    position: relative;
+    z-index: 3;
     padding: 0.45rem 1.25rem;
     font-size: 1.55rem;
     color: #ffffff;
