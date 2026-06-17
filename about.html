@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Montes | About</title>
-    <link rel="stylesheet" href="style.css?v=11">
+    <link rel="stylesheet" href="style.css?v=12">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
@@ -12,6 +12,7 @@
   <div id="header"></div>
 
   <main class="ff7-main">
+  <div class="ff7-layout">
 
       <!-- Left: Character rows -->
       <div class="ff7-chars-panel ff7-panel">
@@ -48,39 +49,37 @@
 
       </div><!-- /ff7-chars-panel -->
 
-      <!-- Right: Menu + Time/Gil — always anchored to the right -->
-      <div class="ff7-right-col">
+      <!-- Nav panel — top-right, anchored to top of layout -->
+      <div class="ff7-nav-panel ff7-panel">
+        <ul class="ff7-nav-menu">
+          <li><a href="resume.html">Resume</a></li>
+          <li><a class="ff7-menu-dim">Magic</a></li>
+          <li><a class="ff7-menu-dim">Materia</a></li>
+          <li><a class="ff7-menu-dim">Equip</a></li>
+          <li><a class="ff7-menu-dim">Status</a></li>
+          <li><a class="ff7-menu-dim">Order</a></li>
+          <li><a class="ff7-menu-dim">Limit</a></li>
+          <li><a class="ff7-menu-dim">Config</a></li>
+          <li class="ff7-sep"></li>
+          <li><a class="ff7-menu-dim">Save</a></li>
+          <li><a class="ff7-menu-dim">Quit</a></li>
+        </ul>
+      </div>
 
-        <div class="ff7-nav-panel ff7-panel">
-          <ul class="ff7-nav-menu">
-            <li><a href="resume.html">Resume</a></li>
-            <li><a class="ff7-menu-dim">Magic</a></li>
-            <li><a class="ff7-menu-dim">Materia</a></li>
-            <li><a class="ff7-menu-dim">Equip</a></li>
-            <li><a class="ff7-menu-dim">Status</a></li>
-            <li><a class="ff7-menu-dim">Order</a></li>
-            <li><a class="ff7-menu-dim">Limit</a></li>
-            <li><a class="ff7-menu-dim">Config</a></li>
-            <li class="ff7-sep"></li>
-            <li><a class="ff7-menu-dim">Save</a></li>
-            <li><a class="ff7-menu-dim">Quit</a></li>
-          </ul>
+      <!-- Time/Gil panel — bottom-right, anchored above location bar -->
+      <div class="ff7-timegil-panel ff7-panel">
+        <div class="ff7-tg-row">
+          <span class="ff7-abbr">Time</span>
+          <span class="ff7-tg-val">0:08:00</span>
         </div>
-
-        <div class="ff7-timegil-panel ff7-panel">
-          <div class="ff7-tg-row">
-            <span class="ff7-abbr">Time</span>
-            <span class="ff7-tg-val">0:08:00</span>
-          </div>
-          <div class="ff7-tg-row">
-            <span class="ff7-abbr">Gil</span>
-            <span class="ff7-tg-val">435</span>
-          </div>
+        <div class="ff7-tg-row">
+          <span class="ff7-abbr">Gil</span>
+          <span class="ff7-tg-val">435</span>
         </div>
-
-      </div><!-- /ff7-right-col -->
+      </div>
 
     <div class="ff7-location-bar ff7-panel">Sector 7 Slums</div>
+  </div><!-- /ff7-layout -->
   </main>
 
   <div id="footer"></div>
