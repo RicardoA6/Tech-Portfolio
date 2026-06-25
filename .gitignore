@@ -4,6 +4,9 @@
 # Node modules (if you ever use npm)
 node_modules/
 
+# Next.js build output
+.next/
+
 # Logs
 *.log
 

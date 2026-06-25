@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-#footer {
+footer {
     margin-top: auto;
 }
 
@@ -300,26 +300,17 @@ footer small {
 
 /* =============================================
    FF7 ABOUT PAGE LAYOUT — CSS Grid
-   Fixed pixel values targeting 1920x1080.
-   Scaling comes later once layout is correct.
    ============================================= */
 
 :root {
-    --ff7-rc-width:    220px;   /* right column width (nav + time/gil) */
-    --ff7-rc-overlap:  36px;    /* right col slides left into chars panel */
-    --ff7-rc-top:     -20px;    /* right col floats above grid top */
-    --ff7-loc-width:   440px;   /* location bar width */
-    --ff7-loc-half:    28px;    /* half the location bar height */
-    --ff7-tg-loc-gap:  8px;     /* gap between time/gil bottom and location bar */
+    --ff7-rc-width:    220px;
+    --ff7-rc-overlap:  36px;
+    --ff7-rc-top:     -20px;
+    --ff7-loc-width:   440px;
+    --ff7-loc-half:    28px;
+    --ff7-tg-loc-gap:  8px;
 }
 
-/*
-  Grid rows:
-    row 1 (auto)              — main content: chars panel + right col
-    row 2 (--ff7-tg-loc-gap)  — gap between time panel and location bar
-    row 3 (--ff7-loc-half)    — top half of location bar; chars panel bottom border lands here
-    row 4 (--ff7-loc-half)    — bottom half of location bar
-*/
 .ff7-main {
     flex: 1;
     display: flex;
@@ -342,8 +333,6 @@ footer small {
     height: 860px;
 }
 
-/* Characters panel — spans rows 1-3 so its bottom border sits at location bar midpoint */
-/* padding-right accounts for the right col overlap so no content is hidden */
 .ff7-chars-panel {
     grid-column: 1;
     grid-row: 1 / 4;
@@ -366,7 +355,6 @@ footer small {
     border-bottom: none;
 }
 
-/* Portrait */
 .ff7-portrait {
     width: 140px;
     height: 140px;
@@ -382,7 +370,6 @@ footer small {
 
 .qa-portrait { color: #66ccff; }
 
-/* Stat block */
 .ff7-char-data {
     display: flex;
     flex-direction: column;
@@ -407,7 +394,6 @@ footer small {
 .ff7-hp-val { color: #ffaaaa; }
 .ff7-slash  { color: #999; }
 
-/* Progress bars */
 .ff7-bars {
     flex: 1;
     display: flex;
@@ -450,7 +436,6 @@ footer small {
     background: linear-gradient(90deg, #5a1020 0%, #991133 100%);
 }
 
-/* Nav panel — top-right, anchored to top of layout */
 .ff7-nav-panel {
     grid-column: 2;
     grid-row: 1;
@@ -505,7 +490,6 @@ footer small {
     list-style: none;
 }
 
-/* Time / Gil panel — bottom-right, anchored above location bar */
 .ff7-timegil-panel {
     grid-column: 2;
     grid-row: 1;
@@ -529,7 +513,6 @@ footer small {
 
 .ff7-tg-val { color: #ffffff; }
 
-/* Location bar — right edge aligns with nav/time panels */
 .ff7-location-bar {
     grid-column: 1 / 3;
     grid-row: 3 / 5;
