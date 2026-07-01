@@ -436,6 +436,45 @@ footer small {
     background: linear-gradient(90deg, #5a1020 0%, #991133 100%);
 }
 
+.ff7-construction-panel {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    padding: 28px calc(var(--ff7-rc-overlap) + 24px) 0.5rem 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ff7-construction-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.ff7-construction-icon {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    color: #e63946;
+    border: 2px solid #e63946;
+    background: linear-gradient(145deg, #0a1e3a 0%, #0d2b50 100%);
+    box-shadow: inset 0 0 14px rgba(0,0,0,0.6), 0 0 10px rgba(230,57,70,0.4);
+}
+
+.ff7-construction-text {
+    font-size: 1.8rem;
+    color: #ffffff;
+    max-width: 460px;
+    line-height: 1.4;
+    margin: 0;
+}
+
 .ff7-nav-panel {
     grid-column: 2;
     grid-row: 1;

@@ -16,7 +16,7 @@ export default function Header() {
               <li><Link href="/game-dev">Game Dev Projects</Link></li>
             </ul>
           </li>
-          <li><Link href="/#services">Services</Link></li>
+          <li><Link href="/services">Services</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>

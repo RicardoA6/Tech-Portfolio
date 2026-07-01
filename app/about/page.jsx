@@ -71,7 +71,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="ff7-location-bar ff7-panel">Sector 7 Slums</div>
+        <div className="ff7-location-bar ff7-panel">San Gabriel, CA</div>
       </div>
     </main>
   )
