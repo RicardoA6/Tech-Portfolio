@@ -885,3 +885,145 @@ footer small {
     color: #5a7a9a;
     margin-top: 4px;
 }
+
+
+/* =============================================
+   FF7 PORTFOLIO PAGE
+   ============================================= */
+
+.ff7-portfolio-layout {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    max-width: 100%;
+    gap: 10px;
+}
+
+.ff7-loadfile-header {
+    position: relative;
+}
+
+.ff7-loadfile-label {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.6rem 1.1rem;
+    font-size: 1.15rem;
+    color: #ffffff;
+}
+
+.ff7-loadfile-tabs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    gap: 8px;
+}
+
+.ff7-loadfile-tabs .ff7-panel {
+    padding: 0.6rem 1.1rem;
+    font-size: 1.15rem;
+}
+
+.ff7-loadfile-title {
+    width: 220px;
+    color: var(--ff7-cyan);
+    text-align: center;
+}
+
+.ff7-loadfile-action {
+    width: 110px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.ff7-portfolio-section {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+}
+
+.ff7-file-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ff7-file-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ff7-file-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 26px 16px;
+}
+
+.ff7-file-portraits {
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+
+.ff7-file-portrait {
+    width: 66px;
+    height: 66px;
+    border: 2px solid var(--ff7-cyan);
+    background: linear-gradient(145deg, #0a1e3a 0%, #0d2b50 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    color: var(--ff7-cyan);
+}
+
+.ff7-file-info {
+    position: absolute;
+    left: 60%;
+    top: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ff7-file-name {
+    font-size: 1.3rem;
+    color: #ffffff;
+    line-height: 1.2;
+    display: block;
+}
+
+.ff7-file-scope {
+    font-size: 1rem;
+    color: #a8bcd0;
+    line-height: 1.3;
+    display: block;
+}
+
+.ff7-file-scope-val {
+    color: var(--ff7-text);
+}
+
+.ff7-file-row:hover .ff7-file-name {
+    color: #ffffff;
+}
+
+.ff7-file-location {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 5px 18px;
+    font-size: 1.15rem;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
