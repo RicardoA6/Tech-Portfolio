@@ -954,6 +954,9 @@ footer small {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+}
+
+a.ff7-file-row {
     cursor: pointer;
 }
 
@@ -1010,7 +1013,7 @@ footer small {
     color: var(--ff7-text);
 }
 
-.ff7-file-row:hover .ff7-file-name {
+a.ff7-file-row:hover .ff7-file-name {
     color: #ffffff;
 }
 
@@ -1026,4 +1029,115 @@ footer small {
     color: #ffffff;
     letter-spacing: 0.5px;
     text-align: left;
+}
+
+
+/* =============================================
+   FF7 BUG REPORT PAGE
+   ============================================= */
+
+.ff7-loadfile-project {
+    padding: 0.6rem 1.1rem;
+    font-size: 1.15rem;
+    color: var(--ff7-cyan);
+    text-align: center;
+}
+
+.ff7-bug-cols {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.ff7-bug-ticket {
+    flex: 1 1 auto;
+    padding: 1rem 1.5rem 1.25rem;
+}
+
+.ff7-bug-gap {
+    margin-top: 18px;
+}
+
+.ff7-bug-row {
+    display: flex;
+    gap: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.ff7-bug-key {
+    flex: 0 0 110px;
+    color: var(--ff7-cyan);
+}
+
+.ff7-bug-crit {
+    color: #ff8a8a;
+}
+
+.ff7-bug-steps {
+    margin: 0;
+    padding-left: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.ff7-bug-side {
+    flex: 0 0 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ff7-bug-attach {
+    padding: 0.75rem 1.1rem 1rem;
+}
+
+.ff7-bug-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: 2px solid var(--ff7-cyan);
+    background: linear-gradient(145deg, #0a1e3a 0%, #0d2b50 100%);
+    color: var(--ff7-cyan);
+    font-size: 1.1rem;
+}
+
+.ff7-bug-thumb-main {
+    height: 110px;
+}
+
+.ff7-bug-thumb-main i {
+    font-size: 2rem;
+}
+
+.ff7-bug-thumbs {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.ff7-bug-thumbs .ff7-bug-thumb {
+    flex: 1;
+    height: 60px;
+    font-size: 1.4rem;
+}
+
+.ff7-bug-menu {
+    padding: 0.5rem 0.85rem;
+}
+
+
+.ff7-resume-layout {
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    max-width: 100%;
+}
+
+.ff7-resume-layout .ff7-location-bar {
+    align-self: flex-end;
+    width: 260px;
+    margin: 10px 0 0;
 }

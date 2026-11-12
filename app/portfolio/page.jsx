@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export const metadata = {
   title: 'Ricardo Montes | Portfolio',
 }
@@ -18,7 +20,7 @@ export default function Portfolio() {
         <section id="test-plans" className="ff7-portfolio-section">
           <div className="ff7-file-rows">
 
-            <a href="#" className="ff7-file-row">
+            <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-clipboard-list"></i></div>
@@ -30,7 +32,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="ff7-panel ff7-file-location">StudentTrac (QA)</div>
-            </a>
+            </div>
 
           </div>
         </section>
@@ -38,7 +40,7 @@ export default function Portfolio() {
         <section id="test-cases" className="ff7-portfolio-section">
           <div className="ff7-file-rows">
 
-            <a href="#" className="ff7-file-row">
+            <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-list-check"></i></div>
@@ -50,9 +52,9 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="ff7-panel ff7-file-location">StudentTrac (QA)</div>
-            </a>
+            </div>
 
-            <a href="#" className="ff7-file-row">
+            <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-plug"></i></div>
@@ -64,7 +66,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="ff7-panel ff7-file-location">StudentTrac (QA)</div>
-            </a>
+            </div>
 
           </div>
         </section>
@@ -72,7 +74,7 @@ export default function Portfolio() {
         <section id="automation" className="ff7-portfolio-section">
           <div className="ff7-file-rows">
 
-            <a href="#" className="ff7-file-row">
+            <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-robot"></i></div>
@@ -84,9 +86,9 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="ff7-panel ff7-file-location">StudentTrac (QA)</div>
-            </a>
+            </div>
 
-            <a href="#" className="ff7-file-row">
+            <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-diagram-project"></i></div>
@@ -98,7 +100,7 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="ff7-panel ff7-file-location">StudentTrac (QA)</div>
-            </a>
+            </div>
 
           </div>
         </section>
@@ -106,33 +108,19 @@ export default function Portfolio() {
         <section id="game-dev" className="ff7-portfolio-section">
           <div className="ff7-file-rows">
 
-            <a href="#" className="ff7-file-row">
-              <div className="ff7-panel ff7-file-top">
-                <div className="ff7-file-portraits">
-                  <div className="ff7-file-portrait"><i className="fas fa-gamepad"></i></div>
-                  <div className="ff7-file-portrait"><i className="fas fa-code"></i></div>
-                </div>
-                <div className="ff7-file-info">
-                  <span className="ff7-file-name">Command Center Earth</span>
-                  <span className="ff7-file-scope">Scope <span className="ff7-file-scope-val">Gameplay systems + UI (Unity)</span></span>
-                </div>
-              </div>
-              <div className="ff7-panel ff7-file-location">Command Center Earth</div>
-            </a>
-
-            <a href="#" className="ff7-file-row">
+            <Link href="/portfolio/gameplay-bug-report" className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">
                   <div className="ff7-file-portrait"><i className="fas fa-bug"></i></div>
                   <div className="ff7-file-portrait"><i className="fas fa-gamepad"></i></div>
                 </div>
                 <div className="ff7-file-info">
-                  <span className="ff7-file-name">Gameplay Bug Report</span>
+                  <span className="ff7-file-name">Bug Report</span>
                   <span className="ff7-file-scope">Scope <span className="ff7-file-scope-val">Sample defect writeup</span></span>
                 </div>
               </div>
-              <div className="ff7-panel ff7-file-location">Command Center Earth</div>
-            </a>
+              <div className="ff7-panel ff7-file-location">Quality Assurance</div>
+            </Link>
 
           </div>
         </section>
