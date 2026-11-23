@@ -20,6 +20,20 @@ export default function Portfolio() {
         <section id="test-plans" className="ff7-portfolio-section">
           <div className="ff7-file-rows">
 
+            <Link href="/portfolio/site-qa" className="ff7-file-row">
+              <div className="ff7-panel ff7-file-top">
+                <div className="ff7-file-portraits">
+                  <div className="ff7-file-portrait"><i className="fas fa-clipboard-list"></i></div>
+                  <div className="ff7-file-portrait"><i className="fas fa-list-check"></i></div>
+                </div>
+                <div className="ff7-file-info">
+                  <span className="ff7-file-name">Portfolio Site QA</span>
+                  <span className="ff7-file-scope">Scope <span className="ff7-file-scope-val">Test plan, cases, traceability</span></span>
+                </div>
+              </div>
+              <div className="ff7-panel ff7-file-location">Quality Assurance</div>
+            </Link>
+
             <div className="ff7-file-row">
               <div className="ff7-panel ff7-file-top">
                 <div className="ff7-file-portraits">

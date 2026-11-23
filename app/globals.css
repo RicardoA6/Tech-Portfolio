@@ -1247,3 +1247,101 @@ a.ff7-file-row:hover .ff7-file-name {
 .ff7-skill-row .ff7-abbr {
     flex: 0 0 190px;
 }
+
+
+/* =============================================
+   FF7 SITE QA PAGE
+   ============================================= */
+
+.ff7-qa-panel {
+    padding: 0.9rem 1.4rem 1.1rem;
+}
+
+.ff7-qa-intro {
+    margin: 0 0 14px;
+    font-size: 1.2rem;
+    line-height: 1.45;
+    color: var(--ff7-text);
+}
+
+.ff7-qa-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ff7-qa-stat {
+    flex: 1 1 110px;
+    padding: 8px 6px;
+    text-align: center;
+}
+
+.ff7-qa-stat b {
+    display: block;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.ff7-qa-stat span {
+    font-size: 1rem;
+    color: #a8bcd0;
+}
+
+.ff7-qa-scroll {
+    overflow-x: auto;
+}
+
+.ff7-qa-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.05rem;
+    line-height: 1.3;
+}
+
+.ff7-qa-table th {
+    text-align: left;
+    color: var(--ff7-cyan);
+    font-weight: 400;
+    padding: 4px 10px 6px 0;
+    border-bottom: 1px solid rgba(102, 204, 255, 0.4);
+    white-space: nowrap;
+}
+
+.ff7-qa-table td {
+    padding: 7px 10px 7px 0;
+    vertical-align: top;
+    color: var(--ff7-text);
+    border-bottom: 1px solid rgba(102, 204, 255, 0.12);
+}
+
+.ff7-qa-wide {
+    min-width: 200px;
+}
+
+.ff7-qa-steps {
+    display: block;
+    font-size: 0.95rem;
+    color: #a8bcd0;
+}
+
+.ff7-qa-criteria {
+    margin: 4px 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.95rem;
+    color: #a8bcd0;
+}
+
+.ff7-qa-pass { color: #7be08a; }
+.ff7-qa-fail { color: #ff8a8a; }
+.ff7-qa-skip { color: #e6d84a; }
+
+.ff7-qa-menu {
+    padding: 0.5rem 0.85rem;
+    width: max-content;
+}
+
+.ff7-qa-table td:first-child {
+    white-space: nowrap;
+}
