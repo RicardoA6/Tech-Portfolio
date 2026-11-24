@@ -1254,3 +1254,37 @@ a.ff7-file-row:hover .ff7-file-name {
 .ff7-qa-table td:first-child {
     white-space: nowrap;
 }
+
+.ff7-qa-runhead {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.ff7-qa-rundate {
+    font-size: 1.1rem;
+    color: #a8bcd0;
+}
+
+.ff7-qa-runlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    margin-top: 14px;
+    font-size: 1.2rem;
+}
+
+.ff7-qa-runlinks a {
+    color: var(--ff7-cyan);
+    text-decoration: none;
+}
+
+.ff7-qa-runlinks a::before {
+    content: "\25B6 ";
+}
+
+.ff7-qa-runlinks a:hover {
+    color: #ffffff;
+}

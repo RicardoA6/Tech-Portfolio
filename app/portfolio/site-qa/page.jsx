@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { stories, cases, defects } from './qa-data'
+import LatestRun from './LatestRun'
 
 export const metadata = {
   title: 'Ricardo Montes | Portfolio Site QA',
@@ -51,6 +52,8 @@ export default function SiteQA() {
             <div className="ff7-inset ff7-qa-stat"><b>{defects.length}</b><span>defects logged</span></div>
           </div>
         </div>
+
+        <LatestRun />
 
         <div className="ff7-panel ff7-qa-panel">
           <h3 className="ff7-section-title">Test Plan</h3>
