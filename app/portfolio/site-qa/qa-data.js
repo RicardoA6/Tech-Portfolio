@@ -12,7 +12,6 @@ export const stories = [
     id: 'US-02',
     title: 'As a recruiter, I can browse the portfolio and open a project.',
     criteria: [
-      'Portfolio dropdown items jump to their section',
       'Rows that have a project page open it',
       'Rows without a project page are not clickable',
     ],
@@ -87,14 +86,6 @@ export const cases = [
     steps: 'Request /nope and the retired /test-plans route',
     expected: 'A not-found page with HTTP 404',
     actual: 'Both returned 404',
-    result: 'Pass', defect: '',
-  },
-  {
-    id: 'TC-05', story: 'US-02',
-    title: 'Portfolio dropdown anchors',
-    steps: 'Check header dropdown targets against section ids on /portfolio',
-    expected: 'test-plans, test-cases, automation, and game-dev sections exist',
-    actual: 'All four ids found',
     result: 'Pass', defect: '',
   },
   {
