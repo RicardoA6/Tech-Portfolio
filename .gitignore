@@ -20,3 +20,5 @@ Thumbs.db
 playwright-report/
 test-results/
 blob-report/
+
+playwright-results.json
